@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include "BubbleSort.h"
+#include "ShellSort.h"
 
 using namespace std;
 
@@ -17,7 +18,7 @@ int main() {
             indice++;
         }
 
-        bubbleSort<string>(palabras, indice - 1);
+        shellSort<string>(palabras, indice - 1);
 
         for (unsigned long i = 0; i < indice; i++)
             cout << palabras[i] << endl;
